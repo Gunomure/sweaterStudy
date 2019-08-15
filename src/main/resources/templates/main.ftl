@@ -18,14 +18,16 @@
         <input type="text" name="filter">
         <button type="submit">Найти</button>
     </form>
-    <#list messages as message>
-        <div>
-            <b>${message.id}</b>
-            <span>${message.text}</span>
-            <i>${message.tag}</i>
-            <strong>${message.authorName}</strong>
-        </div>
+    <#if messages??>
+        <#list messages as message>
+            <div>
+                <b>${message.id}</b>
+                <span>${message.text}</span>
+                <i>${message.tag}</i>
+                <strong>${message.authorName}</strong>
+            </div>
+        </#list>
         <#else>
-        No message
-    </#list>
+        There are'n messages
+    </#if>
 </@c.page>
