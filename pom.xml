@@ -45,7 +45,22 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
         </dependency>
-        <!-- END dependencies -->
+        <!-- END security -->
+
+        <!-- mail -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-mail</artifactId>
+            <!-- END mail -->
+        </dependency>
+
+        <!-- flywaydb -->
+        <dependency>
+            <groupId>org.flywaydb</groupId>
+            <artifactId>flyway-core</artifactId>
+        </dependency>
+        <!-- end flywaydb -->
+
     </dependencies>
 
     <properties>
@@ -61,5 +76,5 @@
             </plugin>
         </plugins>
     </build>
-    
+
 </project>
